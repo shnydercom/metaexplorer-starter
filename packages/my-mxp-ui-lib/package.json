@@ -1,12 +1,12 @@
 {
-  "name": "@my-org/my-monorepo-ui-lib",
+  "name": "@my-org/my-mxp-ui-lib",
   "version": "1.0.0",
   "description": "a UI library for my monorepo",
   "main": "./lib/index.js",
   "module": "./lib-esm/index.js",
   "types": "./lib/index.d.ts",
   "author": "shnyder.com",
-  "license": "MIT",
+  "license": "EUPL-1.2",
   "scripts": {
     "story": "start-storybook",
     "libbuild": "tsc && tsc --build tsconfig.esm.json"

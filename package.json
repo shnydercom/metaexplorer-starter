@@ -1,11 +1,11 @@
 {
-  "name": "lerna-typescript-cra-uilib-starter",
+  "name": "metaexplorer-starter",
   "version": "1.0.0",
-  "description": "Starter for Monorepos: Lerna, TypeScript, CRA and Storybook",
+  "description": "Project for easily getting started with Metaexplorer",
   "main": "index.js",
-  "repository": "https://github.com/shnydercom/lerna-typescript-cra-uilib-starter.git",
+  "repository": "https://github.com/shnydercom/metaexplorer-starter.git",
   "author": "shnyder.com",
-  "license": "MIT",
+  "license": "EUPL-1.2",
   "private": true,
   "workspaces": [
     "packages/*"

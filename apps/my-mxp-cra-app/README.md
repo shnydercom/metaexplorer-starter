@@ -1,3 +1,6 @@
+# Create-React-App adjusted for Metaexplorer
+use this package as a template for your own apps
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
