@@ -1,0 +1,13 @@
+{
+  "name": "my-mxp-jsonstore",
+  "version": "1.0.0",
+  "description": "declarative blocks describing the application",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "node ./create-block-lib.js"
+  },
+  "devDependencies": {
+    "@metaexplorer/editor-dev-server": "^0.0.8"
+  }
+}

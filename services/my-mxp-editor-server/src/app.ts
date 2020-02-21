@@ -1,0 +1,1 @@
+import '@metaexplorer/editor-dev-server/lib/app';

@@ -1,7 +1,7 @@
 {
-  "name": "my-mxp-ui-lib",
+  "name": "my-mxp-ui-mod",
   "version": "1.0.0",
-  "description": "a UI library for my my-mod",
+  "description": "a MetaExplorer UI mod for my-mxp",
   "main": "./lib/index.js",
   "module": "./lib-esm/index.js",
   "types": "./lib/index.d.ts",
@@ -25,5 +25,9 @@
     "source-map-loader": "^0.2.4",
     "style-loader": "^1.0.0",
     "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.7.2",
+    "@metaexplorer/core": "^0.0.10"
   }
 }
