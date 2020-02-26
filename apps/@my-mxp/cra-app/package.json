@@ -1,10 +1,10 @@
 {
-  "name": "my-mxp-cra-app",
+  "name": "@my-mxp/cra-app",
   "version": "0.1.0",
   "private": true,
   "license": "EUPL-1.2",
   "dependencies": {
-    "@my-org/my-mxp-ui-lib": "*",
+    "@my-mxp/ui-mod": "*",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0"

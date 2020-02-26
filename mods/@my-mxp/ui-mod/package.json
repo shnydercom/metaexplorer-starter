@@ -1,5 +1,5 @@
 {
-  "name": "my-mxp-ui-mod",
+  "name": "@my-mxp/ui-mod",
   "version": "1.0.0",
   "description": "a MetaExplorer UI mod for my-mxp",
   "main": "./lib/index.js",

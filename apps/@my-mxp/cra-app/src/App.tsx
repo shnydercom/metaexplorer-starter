@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {MyNewComponent} from '@my-org/my-mxp-ui-lib';
+import {MyNewComponent} from '@my-mxp/ui-lib';
 
 function App() {
   return (

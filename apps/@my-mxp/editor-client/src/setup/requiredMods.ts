@@ -3,7 +3,7 @@ import { MOD_MATERIALDESIGN_ID, initMaterialDesignMod } from '@metaexplorer-mods
 import { MOD_USERITPT_ID, initUSERITPTClientMod } from '@metaexplorer-mods/useritpt';
 import { MOD_ITPTEDITOR_ID, initItptEditorMod } from '@metaexplorer-mods/itpt-editor';
 import { isProduction } from '@metaexplorer/core';
-import { MOD_MY_MXP_ID, initMod } from 'my-mxp-ui-mod';
+import { MOD_MY_MXP_ID, initMod } from '@my-mxp/ui-mod';
 
 
 const editorItptJSON = require('./../editor-config.json');

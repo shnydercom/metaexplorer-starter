@@ -1,5 +1,5 @@
 {
-  "name": "my-mxp-ui-lib",
+  "name": "@my-mxp/ui-lib",
   "version": "1.0.0",
   "description": "a UI library for my my-mod",
   "main": "./lib/index.js",

@@ -1,5 +1,5 @@
 {
-  "name": "my-mxp-editor-client",
+  "name": "@my-mxp/editor-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,7 +23,7 @@
     "rxjs": "^6.5.3",
     "rxjs-compat": "^6.5.3",
     "shortid": "^2.2.15",
-    "my-mxp-ui-lib": "*"
+    "@my-mxp/ui-mod": "*"
   },
   "scripts": {
     "editor": "set MIO_DYNAMIC=true && yarn react-scripts start",

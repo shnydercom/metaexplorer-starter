@@ -1,6 +1,6 @@
 const proxy = require('http-proxy-middleware');
 const path = require('path');
-const staticItpts = require('../../../my-mxp-editor-server/dev-srv-nocode/interpreters.json');
+const staticItpts = require('../../../@my-mxp/editor-server/dev-srv-nocode/interpreters.json');
 const itptEditorModServerBOM = require('@metaexplorer-mods/itpt-editor/lib/server-bom');
 
 module.exports = function (app) {

@@ -1,5 +1,5 @@
 {
-  "name": "my-mxp-jsonstore",
+  "name": "@my-mxp/jsonstore",
   "version": "1.0.0",
   "description": "declarative blocks describing the application",
   "main": "index.js",
