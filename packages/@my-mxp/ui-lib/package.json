@@ -7,7 +7,7 @@
   "types": "./lib/index.d.ts",
   "license": "MIT",
   "scripts": {
-    "story": "start-storybook",
+    "story": "start-storybook -p 3013",
     "libbuild": "tsc && tsc --build tsconfig.esm.json"
   },
   "peerDependencies": {

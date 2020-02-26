@@ -2,7 +2,7 @@
   "include": [
     "src"
   ],
-  "extends": "../../tsconfig.json",
+  "extends": "../../../tsconfig.json",
   "compilerOptions": {
     "target": "es5",
     "lib": [

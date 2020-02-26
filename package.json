@@ -6,10 +6,10 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "services/*",
-    "packages/*",
-    "mods/*",
-    "apps/*"
+    "services/@my-mxp/*",
+    "packages/@my-mxp/*",
+    "mods/@my-mxp/*",
+    "apps/@my-mxp/*"
   ],
   "devDependencies": {
     "lerna": "^3.18.3"
@@ -17,6 +17,8 @@
   "scripts": {
     "story": "lerna run story --stream",
     "prestart": "lerna run libbuild --stream",
+    "preeditor": "lerna run libbuild --stream",
+    "editor": "lerna run editor --stream",
     "start": "lerna run start --stream"
   }
 }
