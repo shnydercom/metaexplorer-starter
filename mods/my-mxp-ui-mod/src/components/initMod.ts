@@ -4,7 +4,7 @@ import { NPSRatingWrappedME, MY_MXP_NPS_RATING_TYPE } from "./npsratingcomponent
 export const MOD_MY_MXP_ID = "MY_MXP";
 export const MOD_MY_MXP_NAME = "MY_MXP Mod";
 
-export function initMY_MXPMod(): Promise<IModStatus> {
+export function initMod(): Promise<IModStatus> {
 	const appIntRetr = appItptRetrFn();
 	const rv: Promise<IModStatus> = new Promise((resolve, reject) => {
 		appIntRetr.addItpt(MY_MXP_NPS_RATING_TYPE, NPSRatingWrappedME, "cRud", [ITPT_TAG_ATOMIC]);

@@ -6,10 +6,10 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "apps/*",
-    "mods/*",
+    "services/*",
     "packages/*",
-    "services/*"
+    "mods/*",
+    "apps/*"
   ],
   "devDependencies": {
     "lerna": "^3.18.3"
