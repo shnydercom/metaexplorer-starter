@@ -67,3 +67,6 @@ lib
 lib-esm
 
 *.tsbuildinfo
+
+# metaexplorer-specific
+dev-srv-nocode/
