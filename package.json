@@ -9,6 +9,7 @@
     "services/@my-mxp/*",
     "packages/@my-mxp/*",
     "mods/@my-mxp/*",
+    "nocode/@my-mxp/*",
     "apps/@my-mxp/*"
   ],
   "devDependencies": {
