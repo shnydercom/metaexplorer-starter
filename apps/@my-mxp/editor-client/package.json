@@ -25,8 +25,11 @@
     "shortid": "^2.2.15",
     "@my-mxp/ui-mod": "*"
   },
+  "peerDependencies": {
+    "cross-env": "*"
+  },
   "scripts": {
-    "editor": "set MIO_DYNAMIC=true && set PORT=3011 && yarn react-scripts start",
+    "editor": "cross-env MIO_DYNAMIC=true cross-env PORT=3011 yarn react-scripts start",
     "build-editor": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
