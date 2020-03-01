@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.7.2",
-    "@metaexplorer/core": "^0.0.10"
+    "@metaexplorer/core": "^0.0.13"
   }
 }

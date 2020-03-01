@@ -9,7 +9,7 @@
     "editor": "cross-env NOCODE_BLOCKS_PATH=../../../nocode/@my-mxp/jsonstore/blocks cross-env NOCODE_BLOCK_START=metaexplorer.io/v1/connected-editor yarn dev"
   },
   "dependencies": {
-    "@metaexplorer/editor-dev-server": "^0.0.10"
+    "@metaexplorer/editor-dev-server": "^0.0.13"
   },
   "peerDependencies": {
     "cross-env": "*"
