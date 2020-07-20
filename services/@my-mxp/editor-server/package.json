@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "libbuild": "set NOCODE_BLOCKS_PATH=../../../nocode/@my-mxp/jsonstore/blocks && ts-node-dev ./src/initFolder.ts",
+    "initserver": "set NOCODE_BLOCKS_PATH=../../../nocode/@my-mxp/jsonstore/blocks && ts-node-dev ./src/initFolder.ts",
     "dev": "ts-node-dev --respawn ./src/app.ts",
     "editor": "cross-env NOCODE_BLOCKS_PATH=../../../nocode/@my-mxp/jsonstore/blocks cross-env NOCODE_BLOCK_START=metaexplorer.io/v1/connected-editor yarn dev"
   },

@@ -19,7 +19,7 @@
   "scripts": {
     "story": "lerna run story --stream",
     "prestart": "lerna run libbuild --stream",
-    "preeditor": "lerna run libbuild --stream",
+    "preeditor": "lerna run initserver && lerna run libbuild --stream",
     "editor": "lerna run editor --stream",
     "start": "lerna run start --stream"
   }
