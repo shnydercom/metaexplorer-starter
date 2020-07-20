@@ -1,4 +1,4 @@
-import { ldBlueprint, BlueprintConfig, IBlueprintItpt, ILDOptions, IKvStore, LDDict, UserDefDict, initLDLocalState, LDConnectedState, LDConnectedDispatch, LDOwnProps, LDLocalState, gdsfpLD } from '@metaexplorer/core';
+import { ldBlueprint, BlueprintConfig, IBlueprintItpt, ILDOptions, LDDict, UserDefDict, initLDLocalState, LDConnectedState, LDConnectedDispatch, LDOwnProps, LDLocalState, gdsfpLD, ownKVLs, KVL } from '@metaexplorer/core';
 import { Component } from 'react';
 import NPSRatingComponent from '.';
 import React from 'react';
@@ -7,15 +7,15 @@ export const MY_MXP_NPS_RATING_NAME = "my-mxp/nps-rating-input";
 
 export const MY_MXP_NPS_RATING_TYPE = "my-mxp/nps-rating-type";
 
-const interpretableKeys: string[] = [LDDict.description, UserDefDict.inputData];
+const inKeys: string[] = [LDDict.description, UserDefDict.inputData];
 
 const bpCfg: BlueprintConfig = {
 	crudSkills: "cRud",
-	interpretableKeys,
+	inKeys,
 	nameSelf: MY_MXP_NPS_RATING_NAME,
 	canInterpretType: MY_MXP_NPS_RATING_TYPE,
 	subItptOf: null,
-	initialKvStores: [
+	ownKVLs: [
 		{
 			key: LDDict.description,
 			value: undefined,
@@ -36,7 +36,7 @@ export class NPSRatingWrappedME extends Component<LDConnectedState & LDConnected
 		nextProps: LDConnectedState & LDConnectedDispatch & LDOwnProps,
 		prevState: LDLocalState): null | LDLocalState {
 		let rvLD = gdsfpLD(
-			nextProps, prevState, interpretableKeys, interpretableKeys, MY_MXP_NPS_RATING_TYPE);
+			nextProps, prevState, inKeys, inKeys, MY_MXP_NPS_RATING_TYPE);
 		if (!rvLD) {
 			return null;
 		}
@@ -50,12 +50,12 @@ export class NPSRatingWrappedME extends Component<LDConnectedState & LDConnected
 	}
 	cfg: BlueprintConfig;
 	consumeLDOptions: (ldOptions: ILDOptions) => any;
-	initialKvStores: IKvStore[];
+	ownKVLs: KVL[];
 	constructor(props: any) {
 		super(props);
 		this.cfg = (this.constructor["cfg"] as BlueprintConfig);
-		const ldState = initLDLocalState(this.cfg, props, interpretableKeys,
-		interpretableKeys);
+		const ldState = initLDLocalState(this.cfg, props, inKeys,
+		inKeys);
 		this.state = {
 			...ldState,
 		};
