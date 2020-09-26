@@ -13,8 +13,8 @@
     "apps/@my-mxp/*"
   ],
   "devDependencies": {
-    "cross-env": "^7.0.0",
-    "lerna": "^3.18.3"
+    "cross-env": "^7.0.2",
+    "lerna": "^3.22.1"
   },
   "scripts": {
     "story": "lerna run story --stream",
