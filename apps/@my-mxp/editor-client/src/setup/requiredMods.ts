@@ -2,7 +2,6 @@ import { IModSpec, changeMainAppItpt, SingleModStateKeysDict, BlueprintConfig, a
 import { MOD_MATERIALDESIGN_ID, initMaterialDesignMod } from '@metaexplorer-mods/material-design';
 import { MOD_USERITPT_ID, initUSERITPTClientMod } from '@metaexplorer-mods/useritpt';
 import { MOD_ITPTEDITOR_ID, initItptEditorMod } from '@metaexplorer-mods/itpt-editor';
-import { isProduction } from '@metaexplorer/core';
 import { MOD_MY_MXP_ID, initMod } from '@my-mxp/ui-mod';
 
 
@@ -30,13 +29,13 @@ export function setupRequiredMods(): IModSpec[] {
 	);
 	modSpecs.push({
 		id: MOD_USERITPT_ID,
-		initFn: () => initUSERITPTClientMod(isProduction),
+		initFn: () => initUSERITPTClientMod(false),
 		dependencies: []
 	}
 	);
 	modSpecs.push({
 		id: MOD_ITPTEDITOR_ID,
-		initFn: () => initItptEditorMod(!isProduction),
+		initFn: () => initItptEditorMod(true),
 		dependencies: []
 	}
 	);

@@ -7,7 +7,7 @@
   "scripts": {
     "initserver": "set NOCODE_BLOCKS_PATH=../../../nocode/@my-mxp/jsonstore/blocks && ts-node-dev ./src/initFolder.ts",
     "dev": "ts-node-dev --respawn ./src/app.ts",
-    "editor": "cross-env NOCODE_BLOCKS_PATH=../../../nocode/@my-mxp/jsonstore/blocks cross-env NOCODE_BLOCK_START=metaexplorer.io/v1/connected-editor yarn dev"
+    "editor": "cross-env NOCODE_BLOCKS_PATH=../../../nocode/@my-mxp/jsonstore/blocks cross-env NOCODE_BLOCK_START=my-mxp/v1/editor yarn dev"
   },
   "dependencies": {
     "@metaexplorer/editor-dev-server": "^0.0.17"
