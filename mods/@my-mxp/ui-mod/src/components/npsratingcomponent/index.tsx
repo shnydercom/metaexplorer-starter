@@ -3,6 +3,7 @@ import Slider from '@material-ui/core/Slider';
 import { withStyles } from '@material-ui/styles';
 
 const NPSRatingSlider = withStyles({/*
+	// here you can adjust your own styles, for an example uncomment the rest:
   root: {
 		color: '#01424f',
 		height: 8,
@@ -37,18 +38,20 @@ export interface NPSRatingComponentProps {
 }
 
 export const NPSRatingComponent = (props: NPSRatingComponentProps) => {
-	return (<div style={{display:"flex", flexDirection:"row"}}>
-		<span style={{width: "15em"}}>{props.text}</span>
-		<NPSRatingSlider
-        defaultValue={props.defaultValue ? props.defaultValue : 5}
-        aria-labelledby="discrete-slider"
+	return (<div style={{ display: "flex", flexDirection: "column" }}>
+		<p style={{ width: "15em" }}>{props.text}</p>
+		<p style={{ width: "15em" }}>
+			<NPSRatingSlider
+				defaultValue={props.defaultValue ? props.defaultValue : 5}
+				aria-labelledby="discrete-slider"
 				valueLabelDisplay="auto"
 				track="inverted"
-        step={0.1}
-        min={0}
-        max={10}
-      />
-		</div>)
+				step={1}
+				min={0}
+				max={10}
+			/>
+		</p>
+	</div>)
 }
 
 export default NPSRatingComponent;
