@@ -35,6 +35,8 @@ const NPSRatingSlider = withStyles({/*
 export interface NPSRatingComponentProps {
 	text: string;
 	defaultValue?: number;
+	value?: number;
+	onChange?: (event: React.ChangeEvent<{}>, value: number | number[]) => void;
 }
 
 export const NPSRatingComponent = (props: NPSRatingComponentProps) => {
@@ -42,7 +44,9 @@ export const NPSRatingComponent = (props: NPSRatingComponentProps) => {
 		<p style={{ width: "15em" }}>{props.text}</p>
 		<p style={{ width: "15em" }}>
 			<NPSRatingSlider
+				onChange={props.onChange}
 				defaultValue={props.defaultValue ? props.defaultValue : 5}
+				value={props.value}
 				aria-labelledby="discrete-slider"
 				valueLabelDisplay="auto"
 				track="inverted"
