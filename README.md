@@ -10,7 +10,7 @@ Get your own code ⚭ nocode editor running in less than 10 minutes
 
 ### Getting started with no-code
 - open a terminal in the folder where this readme is ([windows](https://superuser.com/a/340051), [mac](https://lifehacker.com/launch-an-os-x-terminal-window-from-a-specific-folder-1466745514))
-- run `yarn install` on first run
+- run `yarn` and `yarn firstrun` on first run
 - run `yarn editor` to start the demo-app in the editor
 - done, congratulations!
 
