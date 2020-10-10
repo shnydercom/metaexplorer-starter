@@ -1,5 +1,6 @@
 # metaexplorer-starter
 Get your own code ⚭ nocode editor running in less than 10 minutes
+- [Here's a video tutorial, with some explanations](https://youtu.be/xdP286cBJpg)
 
 # Not a developer?
 ### What you need to download and install
