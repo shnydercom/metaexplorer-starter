@@ -16,6 +16,9 @@
     "cross-env": "^7.0.2",
     "lerna": "^3.22.1"
   },
+  "resolutions": {
+    "babel-loader": "8.1.0"
+  },
   "scripts": {
     "story": "lerna run story --stream",
     "prestart": "lerna run libbuild --stream",

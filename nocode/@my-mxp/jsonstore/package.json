@@ -8,6 +8,6 @@
     "libbuild": "node ./create-block-lib.js"
   },
   "devDependencies": {
-    "@metaexplorer/editor-dev-server": "^0.0.20"
+    "@metaexplorer/editor-dev-server": "^0.0.21"
   }
 }

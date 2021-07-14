@@ -2,9 +2,12 @@ const proxy = require('http-proxy-middleware');
 const path = require('path');
 const staticItpts = require('../../../../services/@my-mxp/editor-server/dev-srv-nocode/interpreters.json');
 const itptEditorModServerBOM = require('@metaexplorer-mods/itpt-editor/lib/server-bom');
+//const qrCodeGenScanMod = require('@metaexplorer-mods/qr-code-genscan/server-bom.js');
+
 
 module.exports = function (app) {
   itptEditorModServerBOM(app);
+  //qrCodeGenScanMod(app);
   if (process.env.MIO_DYNAMIC) {
     app.use(proxy('/api-static/interpreters.json', {
       target: 'http://localhost:5000/api/blocks', pathRewrite: {
