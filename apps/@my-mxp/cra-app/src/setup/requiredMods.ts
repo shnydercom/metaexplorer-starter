@@ -1,7 +1,7 @@
 import { IModSpec, SingleModStateKeysDict, changeMainAppItpt } from '@metaexplorer/core';
 import { MOD_MATERIALDESIGN_ID, initMaterialDesignMod } from '@metaexplorer-mods/material-design';
 import { MOD_USERITPT_ID, initUSERITPTClientMod } from '@metaexplorer-mods/useritpt';
-import { isProduction } from '@metaexplorer/core';
+import { MOD_QRCODEGENSCAN_ID, initQRCODEGENClientMod } from '@metaexplorer-mods/qr-code-genscan';
 import { MOD_MY_MXP_ID, initMod } from '@my-mxp/ui-mod';
 
 export function setupRequiredMods(): IModSpec[] {
@@ -23,7 +23,13 @@ export function setupRequiredMods(): IModSpec[] {
 	);
 	modSpecs.push({
 		id: MOD_USERITPT_ID,
-		initFn: () => initUSERITPTClientMod(isProduction),
+		initFn: () => initUSERITPTClientMod(false),
+		dependencies: [MOD_QRCODEGENSCAN_ID]
+	}
+	);
+	modSpecs.push({
+		id: MOD_QRCODEGENSCAN_ID,
+		initFn: () => initQRCODEGENClientMod(),
 		dependencies: []
 	}
 	);
@@ -33,7 +39,7 @@ export function setupRequiredMods(): IModSpec[] {
 	modSpecs.push({
 		id: MOD_ID,
 		initFn: () => {
-			const startItpt = "my-mxp/v1/start";
+			const startItpt = "yourdomain/demo/index";
 			changeMainAppItpt(startItpt, []);
 			return new Promise((resolve, reject) => {
 				resolve({
