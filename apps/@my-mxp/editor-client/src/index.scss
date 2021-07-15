@@ -27,3 +27,6 @@ code {
   flex-direction: column;
   align-items: center;
 }
+.qr-reader-bounds .controls-container {
+  display: none !important;
+}
