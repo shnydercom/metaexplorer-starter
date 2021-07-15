@@ -1,6 +1,6 @@
 const proxy = require('http-proxy-middleware');
 const path = require('path');
-const staticItpts = require('../../../../nocode/@my-mxp/jsonstore/lib/interpreters.json');
+const staticItpts = require('@my-mxp/jsonstore/lib/interpreters.json');
 const itptEditorModServerBOM = require('@metaexplorer-mods/itpt-editor/lib/server-bom');
 const qrCodeGenScanMod = require('@metaexplorer-mods/qr-code-genscan/lib/server-bom.js');
 
