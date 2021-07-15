@@ -1,4 +1,4 @@
-import { ldBlueprint, BlueprintConfig, IBlueprintItpt, ILDOptions, LDDict, UserDefDict, initLDLocalState, LDConnectedState, LDConnectedDispatch, LDOwnProps, LDLocalState, gdsfpLD, ownKVLs, KVL } from '@metaexplorer/core';
+import { ldBlueprint, BlueprintConfig, IBlueprintItpt, ILDOptions, LDDict, UserDefDict, initLDLocalState, LDConnectedState, LDConnectedDispatch, LDOwnProps, LDLocalState, gdsfpLD, KVL } from '@metaexplorer/core';
 import { Component } from 'react';
 import NPSRatingComponent from '.';
 import React from 'react';

@@ -5,10 +5,10 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "lib-esm",
-    "module": "esnext",
+    "module": "es6",
     "target": "esnext",
+    "strict": true,
     "moduleResolution": "node",
-    "lib": ["dom", "esnext"],
-    "declaration": false
+    "lib": ["dom", "esnext"]
   }
 }

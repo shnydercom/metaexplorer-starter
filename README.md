@@ -1,6 +1,7 @@
-# metaexplorer-starter
-Get your own code ⚭ nocode editor running in less than 10 minutes
-- [Here's a video tutorial, with some explanations](https://youtu.be/xdP286cBJpg)
+# What is metaexplorer?
+[here's an introduction](https://youtu.be/iJUnQRw52Ds) to the goal of this project. It's based around the problem that only devs can see how frontends actually work. So what if devs could offer different viewing-angles on their work to UI/UX designers, data analysts, copywriters, product owners and ultimately, users?
+
+This is a Proof Of Concept, feedback on how you want to make life with your co-workers easier is highly appreciated! The first stable version will be open source as well
 
 # Not a developer?
 ### What you need to download and install
@@ -14,6 +15,7 @@ Get your own code ⚭ nocode editor running in less than 10 minutes
 - run `yarn editor` to start the demo-app in the editor
 - done, congratulations!
 
+# A developer?
 # Getting started with low-code
 This project uses yarn namespaces, make sure to have yarn installed
 - run `yarn install` on first run

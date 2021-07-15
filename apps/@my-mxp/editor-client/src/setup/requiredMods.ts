@@ -2,14 +2,14 @@ import { IModSpec, changeMainAppItpt, SingleModStateKeysDict, BlueprintConfig, a
 import { MOD_MATERIALDESIGN_ID, initMaterialDesignMod } from '@metaexplorer-mods/material-design';
 import { MOD_USERITPT_ID, initUSERITPTClientMod } from '@metaexplorer-mods/useritpt';
 import { MOD_ITPTEDITOR_ID, initItptEditorMod } from '@metaexplorer-mods/itpt-editor';
+import { MOD_QRCODEGENSCAN_ID, initQRCODEGENClientMod } from '@metaexplorer-mods/qr-code-genscan';
 import { MOD_MY_MXP_ID, initMod } from '@my-mxp/ui-mod';
 
 
 const editorItptJSON = require('./../editor-config.json');
 
-const startItpt = "my-mxp/v1/editor";
+const startItpt = "metaexplorer.io/v1/custom-editor-you-are-using";
 
-const startItptJSON = require('./../editor-start.json');
 
 export function setupRequiredMods(): IModSpec[] {
 	//mod initialization functions
@@ -30,22 +30,28 @@ export function setupRequiredMods(): IModSpec[] {
 	modSpecs.push({
 		id: MOD_USERITPT_ID,
 		initFn: () => initUSERITPTClientMod(false),
+		dependencies: [MOD_QRCODEGENSCAN_ID]
+	}
+	);
+	modSpecs.push({
+		id: MOD_QRCODEGENSCAN_ID,
+		initFn: () => initQRCODEGENClientMod(),
 		dependencies: []
 	}
 	);
 	modSpecs.push({
 		id: MOD_ITPTEDITOR_ID,
-		initFn: () => initItptEditorMod(true),
-		dependencies: []
+		initFn: () => initItptEditorMod({
+					currrentlyEditing: "yourdomain/demo/index"
+				}),
+		dependencies: ["editorinitialization"]
 	}
 	);
 	modSpecs.push({
 		id: "editorinitialization",
 		initFn: () => {
-			let startItptCfg: BlueprintConfig = startItptJSON;
 			let editorItptCfg: BlueprintConfig = editorItptJSON;
 			addBlueprintToRetriever(editorItptCfg, "default");
-			addBlueprintToRetriever(startItptCfg, "default");
 			changeMainAppItpt(startItpt, []);
 			return new Promise((resolve, reject) => {
 				resolve({
@@ -55,7 +61,7 @@ export function setupRequiredMods(): IModSpec[] {
 				})
 			});
 		},
-		dependencies: []
+		dependencies: [MOD_USERITPT_ID]
 	}
 	);
 

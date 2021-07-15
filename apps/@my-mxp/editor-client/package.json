@@ -3,38 +3,44 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@my-mxp/ui-mod": "*",
-    "@metaexplorer-mods/itpt-editor": "^0.0.32",
+    "@emotion/react": "^11.4.0",
+    "@metaexplorer-mods/itpt-editor": "^0.0.33",
     "@metaexplorer-mods/material-design": "^0.0.29",
+    "@metaexplorer-mods/qr-code-genscan": "^0.0.29",
     "@metaexplorer-mods/useritpt": "^0.0.29",
-    "@metaexplorer-mods/qr-code-genscan": "^0.0.28",
+    "@my-mxp/ui-mod": "*",
+    "@projectstorm/react-canvas-core": "^6.2.0",
+    "@projectstorm/react-diagrams": "^6.2.0",
+    "@projectstorm/react-diagrams-core": "^6.2.0",
+    "@projectstorm/react-diagrams-defaults": "^6.2.0",
+    "@projectstorm/react-diagrams-routing": "^6.2.0",
+    "closest": "^0.0.1",
+    "craco": "^0.0.3",
+    "dagre": "^0.8.5",
+    "lodash": "^4.17.21",
+    "mathjs": "^9.4.4",
+    "pathfinding": "^0.4.18",
+    "paths-js": "^0.4.11",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.2"
+    "react-scripts": "4.0.3"
   },
   "peerDependencies": {
     "cross-env": "*"
   },
   "scripts": {
-    "starteditor": "react-scripts start --verbose",
+    "starteditor": "craco start --verbose",
     "editor": "cross-env MIO_DYNAMIC=true cross-env PORT=3011 yarn starteditor",
-    "build-editor": "react-scripts build",
-    "test": "react-scripts test",
+    "build-editor": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
 }

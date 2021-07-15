@@ -1,7 +1,7 @@
 {
   "subItptOf": "projCfg",
-  "canInterpretType": "my-mxp/v1/editor-ObjectType",
-  "nameSelf": "my-mxp/v1/editor",
+  "canInterpretType": "metaexplorer.io/v1/custom-editor-you-are-using-ObjectType",
+  "nameSelf": "metaexplorer.io/v1/custom-editor-you-are-using",
   "ownKVLs": [
     {
       "key": "InterpreterReferenceMapKey",
