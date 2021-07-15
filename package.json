@@ -21,7 +21,7 @@
   },
   "scripts": {
     "story": "lerna run story --stream",
-    "prestart": "lerna run libbuild --stream",
+    "prestart": "lerna run nocodebuild && lerna run libbuild --stream",
     "firstrun": "yarn preeditor",
     "preeditor": "lerna run nocodebuild && lerna run initserver --stream && lerna run libbuild --stream",
     "editor": "lerna run editor --stream",
